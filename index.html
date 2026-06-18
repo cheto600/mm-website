@@ -1441,10 +1441,19 @@ footer a:hover{
 @media(max-width:768px){
   nav{
     padding:1rem 1.5rem;
+    background:var(--cream);
+    backdrop-filter:none;
+    -webkit-backdrop-filter:none;
+    border-bottom:1px solid var(--warm);
   }
   
   nav.scrolled{
     padding:0.75rem 1.5rem;
+    background:var(--cream);
+  }
+  
+  .scroll-hint{
+    display:none;
   }
   
   .hamburger{
@@ -1460,16 +1469,16 @@ footer a:hover{
     top:0;
     right:-100%;
     bottom:0;
-    width:75%;
-    max-width:320px;
+    width:78%;
+    max-width:340px;
     background:var(--cream);
     flex-direction:column;
     align-items:flex-start;
     padding:6rem 2rem 2rem;
-    gap:2rem;
-    box-shadow:-8px 0 40px rgba(0,0,0,0.15);
+    gap:1.8rem;
+    box-shadow:-8px 0 40px rgba(0,0,0,0.25);
     transition:right 0.45s cubic-bezier(0.4, 0.0, 0.2, 1);
-    z-index:880;
+    z-index:905;
   }
   
   .nav-links.open{
@@ -1477,7 +1486,9 @@ footer a:hover{
   }
   
   .nav-links a{
-    font-size:1.1rem;
+    font-size:1.15rem;
+    color:var(--charcoal);
+    font-weight:600;
   }
   
   .hero{
